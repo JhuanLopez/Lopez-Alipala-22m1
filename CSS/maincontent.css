@@ -5,7 +5,6 @@
     font-family:Pixels;
     scroll-behavior: smooth;
 }
-#asdadaasdadsa
 ::-webkit-scrollbar{
     background-color: red;
     width: 2px;
@@ -23,15 +22,15 @@
 }
 @font-face {
     font-family: Ghosty;
-    src: url(Ghosty.ttf);
+    src: url(Fonts/Blox2.ttf);
 }
 @font-face {
     font-family: Pixels;
-    src: url(Pixellari.ttf);
+    src: url(Fonts/Pixellari.ttf);
 }
 @font-face {
     font-family: Logo;
-    src: url(Blox2.ttf);
+    src: url(Fonts/Blox2.ttf);
 }
 .logo-header{
     position: absolute;

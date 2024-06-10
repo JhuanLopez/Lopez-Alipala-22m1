@@ -7,11 +7,11 @@
 }
 @font-face {
     font-family: Pixels;
-    src: url(Pixellari.ttf);
+    src: url(Fonts/Pixellari.ttf);
 }
 @font-face {
     font-family: Logo;
-    src: url(Blox2.ttf);
+    src: url(Fonts/Blox2.ttf);
 }
 .header p{
     display: flex;
