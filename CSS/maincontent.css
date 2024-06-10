@@ -5,7 +5,6 @@
     font-family:Pixels;
     scroll-behavior: smooth;
 }
-#asdadaasdadsa
 ::-webkit-scrollbar{
     background-color: red;
     width: 2px;
@@ -23,15 +22,15 @@
 }
 @font-face {
     font-family: Ghosty;
-    src: url(Ghosty.ttf);
+    src: url(Fonts/Blox2.ttf);
 }
 @font-face {
     font-family: Pixels;
-    src: url(Pixellari.ttf);
+    src: url(Fonts/Pixellari.ttf);
 }
 @font-face {
     font-family: Logo;
-    src: url(Blox2.ttf);
+    src: url(Fonts/Blox2.ttf);
 }
 .logo-header{
     position: absolute;
@@ -46,8 +45,7 @@
     left: 0;
     height: 100vh;
     width: 80px;
-    background-image: url("sidebar.gif");
-    background-size: cover;
+    background-color: #111111;
     padding: 0.4rem 0.8rem;
     transition: all 0.5s ease;
 }
@@ -163,58 +161,19 @@ opacity: 1;
 }
 .main-content{
     position: relative;
-    background-color: 009B72;
+    background-image: url();
     min-height: 100vh;
     top: 0;
     left: 80px;
     transition: all 0.5s ease;
-    width: calc(100% - 80px);
-    padding: 50px; 
-    float: center;
-}               
-.container1{
-    display: grid; 
-    justify-content: space-between;
-    max-width: 0 auto;
-    margin: 0 auto;
-}
-.containerA{
-    display: grid; 
-    justify-content: space-between;
-    max-width: 0 auto;
-    margin: 0 auto;
-}
-.containerB{
-    display: grid; 
-    justify-content: space-between;
-    max-width: 0 auto;
-    margin: 0 auto;
-}
+    width: calc(100% - 80px); 
+    background-color: rgb(87, 87, 87);
+}         
 .containerC{
     display: grid; 
     justify-content: center;
     max-width: 0 auto;
     margin: 0 auto;
-
-}
-.container3{
-    display: grid; 
-    justify-content: space-between;
-    max-width: 0 auto;
-    margin: 0 auto;
-}
- .container1 img{
-    display: flex;
-    transform: rotate(90deg);
-}
-.Topper{
-    box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20pxS;
-    padding: 2rem;
-    border-radius: 2rem;
-    display: block;
-    background-size: cover;
-    gap: 5rem;
-    margin-bottom: 50px ;
 }
 .Topper h1{
     font-size: 50px;
@@ -229,48 +188,15 @@ opacity: 1;
     margin-top: 110px;
 }
 .main-content .container{
+    display: grid;
     position: relative;
     min-height: 100vh;
     top: 0;
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
+    margin-bottom: 30px;
 }
-.AboutContainer .container1{
-    position: relative;
-    min-height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-}
-.AboutContainer .containerA{
-    position: relative;
-    min-height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-}
-.AboutContainer .containerC{
-    position: relative;
-    min-height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-}
-.AboutContainer{
-    position: relative;
-    background-color: 009DDC;
-    min-height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-    padding: 50px; 
-    float: center;
-}    
 .Foot{ 
     height: 5rem;
     left: 0;
@@ -306,17 +232,6 @@ opacity: 1;
   .AboutContainer1{
     position: relative;
     background-color: CC3363;
-    min-height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-    padding: 50px; 
-    float: center;
-}   
-.AboutContainer2{
-    position: relative;
-    background-color: 934B00;
     min-height: 100vh;
     top: 0;
     left: 80px;
@@ -404,7 +319,7 @@ opacity: 1;
     font-size: 40px;
     margin-top: 20px;
 }
-.Fade Imge{
+.Fade Img{
     font-size: 100px;
     animation: fadeIn 5s;
 }
