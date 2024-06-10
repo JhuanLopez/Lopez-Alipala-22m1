@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Pixels;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color: red;
+    width: 2px;
+}
+::-webkit-scrollbar-track {
+    background-color:rgba(6, 66, 100, 0);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(6, 65, 100 ); 
+    border-radius: 10px;
+  }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@font-face {
+    font-family: Ghosty;
+    src: url(Ghosty.ttf);
+}
+@font-face {
+    font-family: Pixels;
+    src: url(Pixellari.ttf);
+}
+@font-face {
+    font-family: Logo;
+    src: url(Blox2.ttf);
+}
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-image: url("sidebar.gif");
+    background-size: cover;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+}
+.sidebar.active ~ .main-content{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.sidebar.active ~ .AboutContainer{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.sidebar.active ~ .AboutContainer1{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.sidebar.active ~ .AboutContainer2{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.sidebar.active{
+    width: 250px;
+}
+.sidebar #btn{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height:50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.sidebar.active #btn{
+    left: 95%;
+}
+.sidebar .top .logo{
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sidebar.active .top .logo{
+    opacity: 1;
+}
+.top .logo{ 
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-right: 3px;
+    text-shadow: 5px;
+}
+.top .image{
+    height: 70px;
+    width: 70px;
+    align-self: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sidebar.active .image{
+    opacity: 1;
+}
+.sidebar ul li{
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem;
+    line-height: 50px;
+}
+.sidebar ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+.sidebar ul li a:hover{
+    background-color: white ;
+    color: black;   
+}
+.sidebar ul li a i{
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+.sidebar .navi{
+    opacity: 0;
+}
+.sidebar.active .navi{
+    opacity: 1;
+}
+.sidebar ul li .showhover{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translate(-50% -50%);
+    box-shadow: 0 0.5rem 0.8rem rgb(0, 0, 0);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    opacity: 0;
+}
+.sidebar ul li:hover .showhover{
+opacity: 1;
+}
+.sidebar.active ul li .showhover{
+    display: none;
+}
+.main-content{
+    position: relative;
+    background-color: 009B72;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 50px; 
+    float: center;
+}               
+.container1{
+    display: grid; 
+    justify-content: space-between;
+    max-width: 0 auto;
+    margin: 0 auto;
+}
+.containerA{
+    display: grid; 
+    justify-content: space-between;
+    max-width: 0 auto;
+    margin: 0 auto;
+}
+.containerB{
+    display: grid; 
+    justify-content: space-between;
+    max-width: 0 auto;
+    margin: 0 auto;
+}
+.containerC{
+    display: grid; 
+    justify-content: center;
+    max-width: 0 auto;
+    margin: 0 auto;
+
+}
+.container3{
+    display: grid; 
+    justify-content: space-between;
+    max-width: 0 auto;
+    margin: 0 auto;
+}
+ .container1 img{
+    display: flex;
+    transform: rotate(90deg);
+}
+.Topper{
+    box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20pxS;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: block;
+    background-size: cover;
+    gap: 5rem;
+    margin-bottom: 50px ;
+}
+.Topper h1{
+    font-size: 50px;
+    font-family: Pixels;
+    font-weight: lighter;
+}
+.Topper p{
+    font-size: 100px;
+    font-family: Pixels;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: 110px;
+}
+.main-content .container{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+}
+.AboutContainer .container1{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+}
+.AboutContainer .containerA{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+}
+.AboutContainer .containerC{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+}
+.AboutContainer{
+    position: relative;
+    background-color: 009DDC;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 50px; 
+    float: center;
+}    
+.Foot{ 
+    height: 5rem;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - .1px);
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+  }
+.Foot div{
+    margin-left: 100px;
+    display: inline-block;
+  }
+  .box{
+    transform: translateX(400%);  
+    transition: transform 0.6s ease; 
+    margin-bottom: 40px;
+  }
+  .box.show{
+    transform: translateX(0);
+    transition: transform 0.8s ease; 
+  } 
+  body{
+    overflow-x: hidden;
+  }
+  .sidebar .Disc{
+    opacity: 1;
+  }
+  .sidebar.active .Disc{
+    opacity: 1;
+  }
+  .AboutContainer1{
+    position: relative;
+    background-color: CC3363;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 50px; 
+    float: center;
+}   
+.AboutContainer2{
+    position: relative;
+    background-color: 934B00;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 50px; 
+    float: center;
+}   
+.Th{
+    background-color: 2D3047;
+    left: 80px;
+    transition: all 0.5s ease;
+    text-align: right;
+    padding-right: 10px;
+    min-height: 20px;
+    padding-top: 5px;
+}
+.Th .Login{
+    text-decoration: none;
+    font-size: 25px;
+}
+.Login:hover{
+    color: red;
+}
+.Fade {
+    font-size: 100px;
+    animation: fadeIn 3s;
+}
+.Fade.Fadein{
+    animation: fadeIn 4s;
+}
+.Holder{
+    margin-left: 100px;
+    height: 30rem;
+    width: 46rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: 050C9C;
+    padding: 10px;
+    box-shadow: 0 0.5rem 0.8rem rgb(0, 0, 0);
+    border-radius: .6rem;
+  }
+.Contact {
+    background-color: A7E6FF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0.5rem 0.8rem rgb(0, 0, 0);
+    border-radius: .6rem;
+    padding: 20px;
+    font-size: 30px;
+  }
+.G img{
+    padding: 5px;
+    height: 100px;
+    width: 125 px;
+    display: inline;
+}
+.containerC .F{
+    content: "";
+    clear: both;
+    display: table;
+    justify-content: center;
+}
+.Buttons{
+    height: 40px;
+    width: 60px;
+    float: left;
+    margin-left: 20px;
+    border-radius: .6rem;
+    background-color: rgba(219, 214, 214, 0.678);
+    border-style: none;
+    box-shadow:0 0.5rem 0.8rem rgb(0, 0, 0);
+}
+.Buttons:hover{
+    background-color: brown;
+}
+.for{   
+    margin-bottom: 20px;
+}
+.Comsec{
+    border-style: dashed;
+    border-radius: .8rem;
+}
+.discri{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.Fade Imge{
+    font-size: 100px;
+    animation: fadeIn 5s;
+}
+.description{
+    font-weight: lighter;
+}

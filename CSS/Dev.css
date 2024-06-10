@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Pixels;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Pixels;
+    src: url(Pixellari.ttf);
+}
+@font-face {
+    font-family: Logo;
+    src: url(Blox2.ttf);
+}
+.Top{
+    position: fixed;
+    background-color: blue;
+    width: 100%;
+    padding: 20px;
+    margin-right: 10px;
+}
+.Logo{
+    display: inline;
+}
