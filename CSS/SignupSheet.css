@@ -1,3 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Pixels;
+    scroll-behavior: smooth; 
+}
+@font-face {
+    font-family: Pixels;
+    src: url(Fonts/Pixellari.ttf);
+}
+@font-face {
+    font-family: Logo;
+    src: url(Fonts/Blox2.ttf);
+}
 body {
     display: flex;
     justify-content: center;
@@ -31,22 +46,26 @@ input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
-button {
+.button {
     width: 100%;
     padding: 10px;
-    border: none;
-    border-radius: 5px;
     background-color: #6761A8;
-    color: white;
+    border: none;
+    border-radius: 4px;
+    color: #0f0f0f;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none; 
 }
-
+.button:hover {
+    background-color: #009DDC;
+}
 button:hover {
     background-color: #009DDC;
 }
