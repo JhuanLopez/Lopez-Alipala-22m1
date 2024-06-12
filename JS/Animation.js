@@ -27,9 +27,9 @@ btn.onclick = function () {
 };
 
 const fade = document.querySelectorAll('.Fade');
-window.addEventListener('scroll', checkBoxes);
+window.addEventListener('scroll', checkFades);
 
-checkBoxes();
+checkFades();
 
 function checkFades(){
     const triggerBottom = window.innerHeight / 5 * 4;
@@ -37,7 +37,7 @@ function checkFades(){
     fade.forEach((Fade) => {
         const boxtop = box.getBoundingClientRect().top;
         if (boxtop < triggerBottom){
-        box.classList.add('Fade');
+        box.classList.add('Fadein');
         }else{
             box.classList.remove('Fadein')
         }

@@ -13,13 +13,67 @@
     font-family: Logo;
     src: url(Fonts/Blox2.ttf);
 }
-.Top{
-    position: fixed;
-    background-color: blue;
-    width: 100%;
-    padding: 20px;
-    margin-right: 10px;
+body{
+    background-color: grey;
+    min-height: 50vh;
+    /* overflow-x: hidden; */
 }
-.Logo{
-    display: inline;
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+}
+.logo{
+    
+    font-size: 40px;
+    color: rgb(53, 52, 52);
+}
+.menu a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(53, 52, 52);
+    border-radius: 0 10px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.menu a:hover{
+    background-color: burlywood;
+    color: black;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+#text{
+    font-size: 100px;
+    font-family: Logo;
+    letter-spacing: 10px;
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.Start{
+    position: relative;
+    background-color: grey;
+    padding: 100px;
+}
+.Back img{
+    height: 100%;
+    width: 100%;
+}
+.Back{
+    background-image: linear-gradient(#ffc57d, #ffb288 , #ff9e9e, #fff591);
 }

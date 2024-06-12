@@ -195,7 +195,6 @@ opacity: 1;
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
-    margin-bottom: 30px;
 }
 .Foot{ 
     height: 5rem;
@@ -257,10 +256,12 @@ opacity: 1;
     color: red;
 }
 .Fade {
+    opacity:1;
     font-size: 100px;
     animation: fadeIn 3s;
 }
 .Fade.Fadein{
+    opacity: 0;
     animation: fadeIn 4s;
 }
 .Holder{
@@ -306,9 +307,6 @@ opacity: 1;
 }
 .Buttons:hover{
     background-color: brown;
-}
-.for{   
-    margin-bottom: 20px;
 }
 .Comsec{
     border-style: dashed;
