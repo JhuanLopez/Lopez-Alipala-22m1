@@ -5,6 +5,14 @@
     font-family:Pixels;
     scroll-behavior: smooth;
 }
+@font-face {
+    font-family: Pixels;
+    src: url(Fonts/Pixellari.ttf);
+}
+@font-face {
+    font-family: Logo;
+    src: url(Fonts/Blox2.ttf);
+}
 ::-webkit-scrollbar{
     background-color: red;
     width: 2px;
