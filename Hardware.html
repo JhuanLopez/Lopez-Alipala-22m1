@@ -2,35 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Icons/fontawesome.min.css">
+    <link rel="stylesheet" href="Icons/all.min.css">
     <link rel="stylesheet" href="CSS/Hardware.css">
+    <script defer src="JS/Animation.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
+        <div class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <p style="font-family: Logo; letter-spacing: 5px; margin-left: 50px; margin-bottom: 100px;">Soule</p>
+                    
+                </div>
+                <!--Menu icon to be replaced by own icon-->
+                <i class="fa-solid fa-bars" id="btn"></i>
+                <span style="margin-right: 10px; font-size: 20px ; color: rgba(255, 250, 250, 0.856); font-family: Pixels; pointer-events: none; margin-bottom: 20px;" class="Disc">LESSONS</span>
+            </div>
             <ul>
-                <li><a href="#cpu">CPU</a></li>
-                <li><a href="#motherboard">Motherboard</a></li>
-                <li><a href="#memory">Memory (RAM)</a></li>
-                <li><a href="#storage">Storage Drives</a></li>
-                <li><a href="#power-supply">Power Supply</a></li>
-                <li><a href="#graphics">Graphics and Display</a></li>
-                <li><a href="#input-devices">Input Devices</a></li>
-                <li><a href="#io-devices">Additional Input/Output</a></li>
-                <li><a href="#cooling">Cooling Systems</a></li>
-                <li><a href="#expansion-cards">Expansion Cards</a></li>
-                <li><a href="#peripherals">Peripheral Interfaces</a></li>
-                <li><a href="#case">Case</a></li>
-                <li><a href="#optical-drives">Optical Drives</a></li>
-                <li><a href="#miscellaneous">Miscellaneous</a></li>
+                <li>
+                <a href="#cpu">
+                    <span  class="navi">CPU</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#motherboard">
+                    <span class="navi">Motherboard</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#memory">
+                    <span  class="navi">MEMORY</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#storage">
+                    <span  class="navi">STORAGE</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#power-supply">
+                    <span  class="navi">PSU</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#graphics">
+                    <span  class="navi">GRAPHICS AND DISPLAY</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#input-devices">
+                    <span  class="navi">INPUT DEVICES</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#io-devices">
+                    <span  class="navi">ADDITIONAL INPUT/OUTPUT</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#cooling">
+                    <span  class="navi">COOLING SYSTEMS</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#expansion-cards">
+                    <span  class="navi">EXPANSION CARDS</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#peripherals">
+                    <span  class="navi">PHERIPHERAL INTERFACES</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#case">
+                    <span  class="navi">CASE</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#optical-drives">
+                    <span  class="navi">OPTICAL DRIVES</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#miscellaneous">
+                    <span  class="navi">MISC</span>
+                    
+                </a>
+            </li>
             </ul>
-        </nav>
+        </div>
         <div class="center-container">
             <a href="lessonsHome.html" class="home-link">Back to Homepage</a>
         </div>
     </header>
-    <main>
+    <main class="main-content">
         <article id="cpu">
             <h2>Central Processing Unit (CPU)</h2>
             <p>The brain of the computer, responsible for processing instructions.</p>

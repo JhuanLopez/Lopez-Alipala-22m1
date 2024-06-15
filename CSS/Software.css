@@ -79,3 +79,8 @@ h2 {
 .center-container {
     text-align: right;
 }
+.flex-scroll-x {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }

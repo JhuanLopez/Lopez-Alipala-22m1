@@ -53,18 +53,6 @@
     left: 250px;
     width: calc(100% - 250px);
 }
-.sidebar.active ~ .AboutContainer{
-    left: 250px;
-    width: calc(100% - 250px);
-}
-.sidebar.active ~ .AboutContainer1{
-    left: 250px;
-    width: calc(100% - 250px);
-}
-.sidebar.active ~ .AboutContainer2{
-    left: 250px;
-    width: calc(100% - 250px);
-}
 .sidebar.active{
     width: 250px;
 }
@@ -224,17 +212,6 @@ opacity: 1;
   .sidebar.active .Disc{
     opacity: 1;
   }
-  .AboutContainer1{
-    position: relative;
-    background-color: CC3363;
-    min-height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-    padding: 50px; 
-    float: center;
-}   
 .Th{
     background-color: 2D3047;
     left: 80px;
