@@ -29,7 +29,7 @@
     src: url(Fonts/Pixellari.ttf);
 }
 @font-face {
-    font-family: Logo;
+    font-family: Logo; 
     src: url(Fonts/Blox2.ttf);
 }
 body {

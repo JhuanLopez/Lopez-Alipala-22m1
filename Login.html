@@ -5,28 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to SOULE</title>
     <link rel="stylesheet" href="Css/LoginSheet.css">
+    <script defer src="JS/Animation.js"></script>
+    
 </head>
 <body>
-    <div class="header">
+    <header class="top">
+        <nav>
+            
+        </nav>
+    </header>
+    <div class="body">
+    <div class="header box">
         <p>SOULE</p>
     </div>
-    <div class="login-container">
+    <div class="login-container Fade">
         <h2>Login</h2>
         <form action="/login" method="post">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
+                <br>
+                <br>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
+                <br>
+                <br>
             </div>
-            <a href="Main.html" class="button">LOGIN</a>
+            <a href="index.html" class="button">LOGIN</a>
         </form>
         <div class="Sign">
+            <br>
             <a href="Signup.html" class="Link">Create an Account.</a>
     </div>
     </div>
+    </div>
+    <footer class="Foot">
+        <div class="Description">
+        <div>
+            give us a call <br>63+9919141209
+        </div>
+        <div><p>All Rights Reserve.</p>   </div>
+        </div>
+        <div>
+            This is a prototype website <br> this is not functional
+        </div>
+    </footer>
 </body>
 </html>
     

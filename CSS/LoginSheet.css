@@ -5,6 +5,10 @@
     font-family:Pixels;
     scroll-behavior: smooth; 
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 @font-face {
     font-family: Pixels;
     src: url(Fonts/Pixellari.ttf);
@@ -22,24 +26,23 @@
     vertical-align:bottom;
     font-family: Logo;
     letter-spacing: 10px;
+    margin-right: 100px;
+    font-size: 200x;
 }
-body {
-    display: grid;
+.body {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0; 
-    font-family: Arial, sans-serif;
-    background-image: url("LoginBG.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 .login-container {
-    background-color: #7a5e5ec2;
+    margin-left: 100px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    box-shadow: 0 0 40px rgba(255, 3, 3, 0.986);
+    width: 500px;
+    height: 350px;
     text-align: center;
     justify-content:center;
 }
@@ -66,15 +69,16 @@ input[type="text"], input[type="password"] {
 .button {
     width: 100%;
     padding: 10px;
-    background-color: #6761A8;
+    background-color: #1a191b;
     border: none;
     border-radius: 4px;
-    color: #0f0f0f;
+    color: #fffdfd;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none; 
 }
 .button:hover {
-    background-color: #009DDC;
+    background-color: #0d1011;
 }
 .Sign{
     margin-top: 10px;
@@ -86,5 +90,31 @@ input[type="text"], input[type="password"] {
 .Link:hover{
     color: red;
 }
-
+.box{
+    transform: translateX(-400%);  
+    transition: transform 0.5s ease; 
+    margin-bottom: 40px;
+  }
+.box.show{
+    transform: translateX(0);
+    transition: transform 0.8s ease; 
+  } 
+.Fade {
+    opacity:1;
+    animation: fadeIn 1s;
+}
+.Foot{ 
+    height: 5rem;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - .1px);
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+  }
+.Foot div{
+    margin-left: 100px;
+    display: inline-block;
+  }
 
