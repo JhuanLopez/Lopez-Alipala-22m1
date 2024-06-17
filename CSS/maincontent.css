@@ -69,6 +69,12 @@
 .sidebar.active #btn{
     left: 95%;
 }
+.sidebar .Disc{
+    opacity: 0;
+}
+.sidebar.active .Disc{
+    opacity: 1;
+}
 .sidebar .top .logo{
     color: rgb(255, 255, 255);
     display: flex;
@@ -154,8 +160,8 @@ opacity: 1;
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px); 
-    background-image: url(templates/BG.gif);
-    background-size: cover;
+    background-image: url();
+    background-size: contain;
     background-repeat: no-repeat;
 }         
 .Topper h1{
@@ -171,6 +177,20 @@ opacity: 1;
     margin-top: 110px;
 }
 .main-content .container{
+    padding: 100px 10px;
+    font-size: 50px;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+}
+.main-content .container2{
+    padding: 100px 10px;
+    font-size: 50px;
     display: grid;
     position: relative;
     min-height: 100vh;
@@ -179,11 +199,17 @@ opacity: 1;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
 }
+.sidebar.active ~ .Foot{
+    left: 250px;
+    width: calc(100% - 250px);
+}
 .Foot{ 
-    height: 5rem;
-    left: 0;
-    bottom: 0;
-    width: calc(100% - .1px);
+    position: relative;
+    background-image: url();
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px); 
     background-color: rgb(36, 35, 35);
     color: white;
     text-align: center;
@@ -261,12 +287,6 @@ opacity: 1;
     width: 125 px;
     display: inline;
 }
-.containerC .F{
-    content: "";
-    clear: both;
-    display: table;
-    justify-content: center;
-}
 .Buttons{
     height: 40px;
     width: 60px;
@@ -295,4 +315,17 @@ opacity: 1;
 }
 .description{
     font-weight: lighter;
+}
+.main-content .top{
+    position: fixed;
+    width: 100%;
+    padding: 20px 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+.main-content .top .logo{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
