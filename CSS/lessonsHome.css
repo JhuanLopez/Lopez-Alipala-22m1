@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family:Pixels;
     scroll-behavior: smooth; 
+    overflow-x: hidden;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -30,13 +31,13 @@
 }
 .top .logo{
     font-size: 3em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .nav a{
     position: relative;
     font-size: 2em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 50px;
 }

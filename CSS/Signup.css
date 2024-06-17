@@ -26,13 +26,13 @@
 }
 .top .logo{
     font-size: 3em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .nav a{
     position: relative;
     font-size: 2em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
     text-decoration: none;
     margin-left: 50px;
 }
@@ -44,7 +44,7 @@
     bottom: -6px;
     height: 3px;
     border-radius: 5px;
-    background: #000000;
+    background: #ffffff;
     transform: scaleX(0);
     transition: .5s;
 }
@@ -63,11 +63,12 @@
     background-image: url(ico);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 50px rgba(255, 39, 39, 0.568);
+    box-shadow: 0 0 50px rgba(75, 73, 73, 0.815);
     width: 500px;
     height: 420px;
     text-align: center;
     justify-content: center;
+    color: white;
 }
 
 h2 {
@@ -112,8 +113,8 @@ input[type="checkbox"] {
 }
 .sider{
     width: 700px;
-    margin: 20px;
-    font-size: 30px;
+    margin-right: 60px;
+    font-size: 45px;
 }
 .column {
     justify-content: center;
@@ -132,4 +133,9 @@ input[type="checkbox"] {
 .Foot div{
     margin-left: 100px;
     display: inline-block;
-  }
+}
+body{
+    background-image: url(templates/vackground-com-agUC-v_D1iI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
