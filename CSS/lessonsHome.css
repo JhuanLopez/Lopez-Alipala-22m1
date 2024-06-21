@@ -171,6 +171,14 @@ ul{
     align-items: center;
     font-family: Logo;
 }
+.Les{
+    padding: 300px 0 0 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 100px;
+}
 .B{
 
     height: 140vh;
