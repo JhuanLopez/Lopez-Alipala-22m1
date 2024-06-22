@@ -179,16 +179,21 @@ ul{
     color: black;
     font-size: 20vh;
 }
+.B .Hold{
+  display: flex;
+  gap: 300px;
+  background: linear-gradient(45deg, #979797, #222122);
+  padding: 3vh 5vw 3vh 5vw;
+  border-radius: 4rem;
+}
 .B{
   background: linear-gradient(45deg, #9e6d6d, #928092);
-    height: 140vh;
-    
+    height: 100vh;
     font-family: Helvetica, sans-serif;
     color: rgb(211, 211, 211);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 300px;
   }
   .C{
     height: 10vh;
@@ -286,6 +291,10 @@ ul{
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    
+  }
+  .back2 p{
+    font-weight: lighter;
   }
   .link {
     color: white;

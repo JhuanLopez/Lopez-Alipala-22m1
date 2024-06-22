@@ -30,13 +30,13 @@
 }
 .top .logo{
     font-size: 3em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .nav a{
     position: relative;
     font-size: 2em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin-left: 50px;
 }
@@ -48,7 +48,7 @@
     bottom: -6px;
     height: 3px;
     border-radius: 5px;
-    background: #fffdfd;
+    background: #000000;
     transform: scaleX(0);
     transition: .5s;
 }
@@ -87,7 +87,7 @@
 }
 h2 {
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #000000;
 }
 .form-group {
     margin-bottom: 15px;
@@ -96,7 +96,7 @@ h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #fffefe;
+    color: #000000;
 }
 input[type="text"], input[type="password"] {
     width: 100%;
@@ -111,7 +111,7 @@ input[type="text"], input[type="password"] {
     background-color: #1a191b;
     border: none;
     border-radius: 4px;
-    color: #fffdfd;
+    color: #ffffff;
     font-size: 16px;
     cursor: pointer;
     text-decoration: none; 
@@ -124,7 +124,7 @@ input[type="text"], input[type="password"] {
 }
 .Link{
     text-decoration: none;
-    color: #fffdfd;
+    color: black    ;
 }
 .Link:hover{
     color: rgb(99, 105, 109);
@@ -155,7 +155,7 @@ ul{
 }
 .footer{
 	background-color: #5d5f66;
-    padding: 70px 0;
+    padding: 50px 0 20px 0;
 }
 .footer-col{
    width: 25%;
@@ -228,10 +228,5 @@ ul{
     justify-content: center;
     align-items: center;
     font-family: Logo;
-}
-body{
-    background-image: url(templates/vackground-com-agUC-v_D1iI-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 

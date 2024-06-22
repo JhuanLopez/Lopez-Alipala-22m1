@@ -26,13 +26,13 @@
 }
 .top .logo{
     font-size: 3em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .nav a{
     position: relative;
     font-size: 2em;
-    color: rgb(255, 248, 248);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin-left: 50px;
 }
@@ -44,7 +44,7 @@
     bottom: -6px;
     height: 3px;
     border-radius: 5px;
-    background: #ffffff;
+    background: #000000;
     transform: scaleX(0);
     transition: .5s;
 }
@@ -68,7 +68,7 @@
     height: 420px;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -132,7 +132,7 @@ ul{
 }
 .footer{
 	background-color: #5d5f66;
-    padding: 70px 0;
+    padding: 50px 0 20px 0;
 }
 .footer-col{
    width: 25%;
@@ -206,9 +206,4 @@ ul{
     justify-content: center;
     align-items: center;
     font-family: Logo;
-}
-body{
-    background-image: url(templates/vackground-com-agUC-v_D1iI-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }

@@ -54,13 +54,13 @@
 }
 .top .logo{
     font-size: 3em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .nav a{
     position: relative;
     font-size: 2em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin-left: 50px;
 }
@@ -72,7 +72,7 @@
     bottom: -6px;
     height: 3px;
     border-radius: 5px;
-    background: #fffdfd;
+    background: #000000;
     transform: scaleX(0);
     transition: .5s;
 }
@@ -118,7 +118,7 @@ ul{
 }
 .footer{
 	background-color: #5d5f66;
-    padding: 70px 0;
+    padding: 50px 0 20px 0;
 }
 .footer-col{
    width: 25%;
@@ -241,6 +241,7 @@ ul{
     box-shadow: 0 0.5rem 0.8rem rgb(0, 0, 0);
     border-radius: .6rem;
     justify-content: center;
+    margin: 0 3vw 0 0;
   }
 .Contact {
     background-color: A7E6FF;
@@ -289,13 +290,11 @@ ul{
     font-size: 35px;
 }
 .disc{
-    margin-right: 30px;
-    color: white;
+    margin: 0 2vw 0 5vw;
+    color: rgb(0, 0, 0);
 }
-body{
-    background-image: url(templates/vackground-com-agUC-v_D1iI-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.disc p{
+    font-size: 60px;
 }
 .TF{
     max-height: 100px;

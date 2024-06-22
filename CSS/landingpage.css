@@ -44,7 +44,7 @@
     bottom: -6px;
     height: 3px;
     border-radius: 5px;
-    background: #fffdfd;
+    background: #000000;
     transform: scaleX(0);
     transition: .5s;
 }
@@ -60,7 +60,9 @@
     background-color: #e0f7fa;
 }
 .logo p {
+    font-family: Logo;
     font-size: 30vh;
+    letter-spacing: 10px;
 }
 .main {
     
@@ -97,10 +99,18 @@
     color: white;
     font-weight: lighter;
 }
+.signup:hover{
+    background-color: #6e6e6e;
+    color: white;
+}
 .login {
     background-color: #4e4e4e;
     color: white;
     font-weight: lighter;
+}
+.login:hover {
+    background-color: #6e6e6e;
+    color: white;
 }
 @media (max-width: 768px) {
     .description h1 {
@@ -129,7 +139,7 @@ ul{
 }
 .footer{
 	background-color: #5d5f66;
-    padding: 70px 0;
+    padding: 50px 0 20px 0;
 }
 .footer-col{
    width: 25%;
