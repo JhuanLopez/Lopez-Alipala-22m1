@@ -310,7 +310,7 @@ body:before{
 .header-content {
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 300px 0 200px 0;
   text-align: center;
   background-color: #fff;
   color: #000;
@@ -513,4 +513,42 @@ ul{
 .card-front,
 .card-back{
   padding: 60px 0 0 0;
+}
+.top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+.top .logo{
+  font-size: 3em;
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+}
+.nav a{
+  position: relative;
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 50px;
+}
+.nav a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  border-radius: 5px;
+  background: #000000;
+  transform: scaleX(0);
+  transition: .5s;
+}
+.nav a:hover::after{
+  transform: scaleX(1);
 }
