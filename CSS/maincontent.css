@@ -110,8 +110,8 @@
     height: 50px;
     width: 90%;
     margin: 0.4rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     line-height: 50px;
 }
 .sidebar ul li a{
@@ -152,6 +152,8 @@
 }
 .sidebar ul li:hover .showhover{
 opacity: 1;
+background-color: rgb(164, 168, 165);
+
 }
 .sidebar.active ul li .showhover{
     display: none;

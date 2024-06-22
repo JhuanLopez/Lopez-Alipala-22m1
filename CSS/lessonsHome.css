@@ -76,12 +76,20 @@ body{
     background: linear-gradient(45deg, #b1afaf, #928092);
     height: 40vw;
     width: 100%;
-    padding: 200px 20vw;
+    padding-top: 30vh;
     justify-content: center;
     text-align: center;
     font-size: 6vh;
 }
+.back{
+  text-align: center;
+}
+.back2{
+  text-align: center;
+}
 .Exp p{
+  position: relative;
+  padding-top: auto;
     font-size: 2vw;
 }
 .Cont{
@@ -164,6 +172,9 @@ ul{
   .footer-col{
     width: 100%;
 }}
+.Soule{
+  display: flex;
+}
 .Soule p{
     padding: 20px;
     font-size: 70px;
@@ -172,15 +183,15 @@ ul{
     font-family: Logo;
 }
 .Les{
-    padding: 300px 0 0 0;
+    padding: 300px 0 300px 0;
     text-align: center;
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 100px;
+    font-size: 20vh;
 }
 .B{
-
+  background: linear-gradient(45deg, #9e6d6d, #928092);
     height: 140vh;
     overflow: hidden;
     font-family: Helvetica, sans-serif;
@@ -206,7 +217,7 @@ ul{
   
 .container:hover > .card {
     cursor: pointer;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) scale(1.2);
   }
 .card {
     height: 100%;
@@ -251,7 +262,7 @@ ul{
   
   .container2:hover > .card2 {
     cursor: pointer;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) scale(1.2);
   }
   
   .card2 {
