@@ -5,17 +5,6 @@
     font-family:Pixels;
     scroll-behavior: smooth; 
 }
-::-webkit-scrollbar{
-    background-color: red;
-    width: 2px;
-}
-::-webkit-scrollbar-track {
-    background-color:rgba(6, 66, 100, 0);
-}
-::-webkit-scrollbar-thumb{
-    background: rgb(6, 65, 100 ); 
-    border-radius: 10px;
-  }
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -70,7 +59,7 @@ body{
     transform: scaleX(1);
 }
 .bod2 div{
-    font-size: 4vh;
+    font-size: 50px;
 }
 .Exp{
     background: linear-gradient(45deg, #b1afaf, #928092);
@@ -193,7 +182,7 @@ ul{
 .B{
   background: linear-gradient(45deg, #9e6d6d, #928092);
     height: 140vh;
-    overflow: hidden;
+    
     font-family: Helvetica, sans-serif;
     color: rgb(211, 211, 211);
     display: flex;
