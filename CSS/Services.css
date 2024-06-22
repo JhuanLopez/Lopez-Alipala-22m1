@@ -243,44 +243,33 @@ body:before{
 }
 .image2 img{
   height: 100%;
-  width: 100%;
-  object-fit: cover;
+    backface-visibility: hidden; /* Hide back side initially */
+    transition: transform 0.6s ease; /* Smooth transform animation */
 }
-.container2 .box2.two2 .image-box2{
-  position: relative;
-  text-align: right;
-  right: 0;
-  bottom: 27px;
+
+.card-front {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    transform: rotateY(0deg); /* Front facing */
 }
-.box2.two2 .image-box2 .info2{
-  margin: 0 35px 0 0;
+
+.card-back {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    transform: rotateY(180deg); /* Initially flipped */
 }
-.box2.two2 .info2 .brand2{
- font-size: 17px;
- font-weight: 600;
- color: #141414;
+
+.benefit:hover .card-front {
+    transform: rotateY(-180deg); /* Flip to show back */
 }
-.box2.two2 .info2 .name2{
- font-size: 20px;
- font-weight: 500;
- color: #fff;
+
+.benefit:hover .card-back {
+    transform: rotateY(0deg); /* Show back */
 }
-.box2.two2 .info2 .shipping2{
- font-size: 14px;
- font-weight: 400;
- color: #000;
-}
-.box2.two2 .button2{
-  margin: 17px 0;
-}
-.button2 button{
-  outline: none;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 12px;
-  padding: 8px 17px;
-  background: transparent;
-  font-size: 15px;
-  font-weight: 400;
-  cursor: pointer;
+
+.card-back h3,
+.card-back p {
+    color: #fff; /* Adjust text color for better readability */
 }
