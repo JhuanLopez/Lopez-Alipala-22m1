@@ -60,7 +60,7 @@ body:before{
 }
 .container{
   display: flex;
-  max-width: 750px;
+  max-width: 45vw;
   background: #fff;
   border-radius: 12px;
   justify-content: space-between;
@@ -184,8 +184,9 @@ body:before{
  
 
 .container2{
+  position: relative;
   display: flex;
-  max-width: 750px;
+  max-width: 45vw;
   background: #fff;
   border-radius: 12px;
   justify-content: space-between;
@@ -306,16 +307,13 @@ body:before{
   font-weight: 400;
   cursor: pointer;
 }
-header {
+.header-content {
+  max-width: 100%;
+  margin: 0 auto;
   padding: 50px;
   text-align: center;
   background-color: #fff;
   color: #000;
-}
-
-.header-content {
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .header-content h1 {
@@ -511,4 +509,8 @@ ul{
     justify-content: center;
     align-items: center;
     font-family: Logo;
+}
+.card-front,
+.card-back{
+  padding: 60px 0 0 0;
 }
