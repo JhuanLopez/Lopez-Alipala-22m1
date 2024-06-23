@@ -7,6 +7,7 @@ document.getElementById('showPassword').addEventListener('change', function() {
     }
 });
 
+
 document.getElementById('showConfirmPassword').addEventListener('change', function() {
     const confirmPasswordField = document.getElementById('confirmPassword');
     if (this.checked) {
@@ -15,7 +16,7 @@ document.getElementById('showConfirmPassword').addEventListener('change', functi
         confirmPasswordField.type = 'password';
     }
 });
-
+  
 document.getElementById('signupForm').addEventListener('submit', function(event) {
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
