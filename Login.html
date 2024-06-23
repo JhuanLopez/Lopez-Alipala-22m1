@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/LoginSheet.css">
-    <script defer src="JS/Animation.js"></script>
-    
+    <script defer src="JS/Login.js"></script>
 </head>
 <body>
     <header class="top">
@@ -22,7 +21,7 @@
     </div>
     <div class="login-container Fade">
         <h2>Login</h2>
-        <form action="/login" method="post">
+        <form id="loginForm">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
@@ -32,15 +31,18 @@
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="showPassword"> <label for="showPassword">Show Password</label>
+                </div>
                 <br>
                 <br>
             </div>
-            <a href="Home.html" onclick="alert('Welcome to Soule');" class="button">LogIn</a>
+            <button type="submit" class="button">LogIn</button>
         </form>
         <div class="Sign">
             <br>
             <a href="Signup.html" class="Link">Create an Account.</a>
-    </div>
+        </div>
     </div>
     </div>
     <p style="text-align: center; color: rgb(15, 15, 15);">SOULE 2024</p>
@@ -75,4 +77,3 @@
     </footer>
 </body>
 </html>
-    
