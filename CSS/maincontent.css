@@ -320,17 +320,68 @@ ul{
     color: black;
     font-size: 100px;
 }
-/* .Foot{ 
-    position: relative;
-    background-image: url();
-    top: 0;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px); 
-    background-color: rgb(36, 35, 35);
-    color: white;
+
+.membership-benefits {
+    padding: 50px;
+    background-color: #000;
     text-align: center;
-    padding: 1.5rem;
-  } */
+    color: white;
+  }
+  
+  .membership-benefits h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .benefit {
+    position: relative;
+    width: 300px;
+    height: 200px; /* Set height for consistent card size */
+    perspective: 1000px; /* Perspective for 3D effect */
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide back side initially */
+    transition: transform 0.6s ease; /* Smooth transform animation */
+  }
+  
+  .card-front {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    transform: rotateY(0deg); /* Front facing */
+  }
+  
+  .card-back {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    transform: rotateY(180deg); /* Initially flipped */
+  }
+  
+  .benefit:hover .card-front {
+    transform: rotateY(-180deg); /* Flip to show back */
+  }
+  
+  .benefit:hover .card-back {
+    transform: rotateY(0deg); /* Show back */
+  }
+  
+  .card-back h3,
+  .card-back p {
+    color: #fff; /* Adjust text color for better readability */
+  }
   .box{
     transform: translateX(400%);  
     transition: transform 0.6s ease; 
