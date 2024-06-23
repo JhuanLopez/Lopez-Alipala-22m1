@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Pixels;
+  scroll-behavior: smooth;
 }
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -329,15 +330,19 @@ body:before{
 .buttons {
   margin-bottom: 40px;
 }
-
 .btn {
   padding: 15px 30px;
   margin: 10px;
   border: none;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 3rem;
+  transition: ease 1.3ms;
 }
-
+.btn:hover{
+  background-color: #141414;
+  transform: scale(1.1);
+}
 .primary {
   background-color: #000;
   color: #fff;
