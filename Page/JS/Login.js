@@ -28,5 +28,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 
     alert('Welcome to Soule');
-    window.location.href = 'Home.html';
+    window.location.href = 'Page/Home.html';
 });
