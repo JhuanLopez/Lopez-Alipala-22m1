@@ -1,4 +1,6 @@
-/* General styles */
+*{
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +8,7 @@ body {
 }
 
 header {
-    background: #6761A8;
+    background: #323233;
     color: #fff;
     padding: 10px 0;
     position: fixed;
